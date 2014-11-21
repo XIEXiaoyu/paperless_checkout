@@ -1,0 +1,516 @@
+.container_24 {
+	border: 1px solid #cfcfcf;
+	height: 520px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 15px 10px;
+}
+
+header {
+	overflow: hidden;
+	height: 80px;
+}
+
+h1 {
+	float: left;
+	line-height: 80px;
+	padding-left: 30px;
+	font-size: 32px;
+	font-family: 'Noto Serif', serif;
+}
+
+.button {
+	float: right;
+	padding: 0;
+	border: 2px solid #848484;
+	margin: 6px 30px 6px 0;
+	height: 28px;
+    width: 109px;  
+    border-radius: 13px; 
+    font-size: 18px;
+    padding-bottom: 1px;
+    letter-spacing: 1px;
+    color: #000000;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9ea), to(#eaead0));
+	cursor: pointer;
+	outline: none;
+}
+
+nav {
+	float: right;
+	margin-top: 32px;
+	padding-right: 32px;
+}
+
+nav ul {
+	float: right;
+	margin-bottom: 0px;
+}
+
+nav li {
+	display: inline;
+	padding-left: 30px;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #7e7e7e;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.selected {
+	color: #000000;
+}
+
+.table_wrapper {
+	height: 372px;
+}
+
+.table {
+	font-family: sans-serif;
+	width: 900px;
+	margin-top: 10px;
+	margin-left: 29px;
+}
+
+th, td {
+	font-family: arial;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid gray;
+}
+
+th {
+	background-color: #499cf1;
+	color: white;
+	font-size: 14px;
+}
+
+td {
+	font-size: 12px;
+	color: #433f3f;
+}
+
+.input {
+	border: none;
+	height:26px;  
+    padding: 0;
+    padding-left:5px;
+    font-size:14px;
+    width:90%;
+    color: #433f3f;
+}
+
+#previous, #next {
+	display: inline-block;
+	color:#3c3c3c;
+}
+
+#previous {
+	float: left;
+}
+
+#previous:before {
+	content:"\00AB";
+	font-size: 14px;
+	padding-left: 30px;
+	padding-right:5px;
+}
+
+#next {
+	float: right;
+}
+
+#next:after {
+	content:"\00BB";
+	font-size: 14px;
+	padding-right: 30px;
+	padding-left: 5px;
+}
+
+.page {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+/************************************
+ list
+ ************************************/
+
+/*filter*/
+
+.filter {
+	background-color: #74b8fd;
+	overflow: hidden;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#499cf1), to(#5ea8f4));
+	height: 40px;
+}
+
+.filter label{
+	display: block;
+	float: left;
+	font-size:18px;
+	font-weight: bold;
+	padding-left: 30px;
+	padding-right: 10px;
+	height: 40px;
+	width: 60px;
+	line-height: 40px;
+	color: #303030;
+}
+
+label:after {
+	content:"\00BB";
+	font-size: 18px;
+	padding-left: 6px;
+}
+
+.filter form {
+	float: left;
+	height:40px;
+	width: 960px;
+}
+
+#filter_input {
+	border: none;
+	height:26px; 
+    width: 700px;  
+    border-radius: 5px; 
+    padding: 0;
+    padding-left:10px;
+    padding-bottom:2px;
+    margin-top: 6px;
+    font-size:14px;
+}
+
+::-webkit-input-placeholder {
+	text-align: center;
+	color: #b5b5b5;
+	font-size: 14px;
+}
+
+/*table*/
+
+#name_l {
+	width: 40%;
+}
+
+#code_l {
+	width: 10%;
+}
+
+#cost_l {
+	width: 10%;
+}
+
+#price_l {
+	width: 10%;
+}
+
+#stock_l {
+	width: 10%;
+}
+
+#operations {
+	width: 20%;
+	padding-left: 0;
+}
+
+.update a, .delete a {
+	text-decoration: none;
+	color: #499cf1;
+}
+
+.update {
+	border-right: none;
+}
+
+.delete {
+	border-left: none;
+}
+
+
+
+/************************************
+ adding
+ ************************************/
+
+/*talbe of adding*/
+
+#name_a {
+	width: 40%;
+}
+
+#code_a {
+	width: 15%;
+}
+
+#cost_a {
+	width: 15%;
+}
+
+#price_a {
+	width: 15%;
+}
+
+#stock_a {
+	width: 15%;
+}
+
+.input_a {
+	margin-top: 3px;
+	border: none;
+	height:26px;  
+    padding: 0;
+    padding-left:5px;
+    font-size:14px;
+    width:90%;
+}
+
+#input_name_a {
+	    width:97%;
+}
+
+.response {
+	border-top: solid blue 1px;
+	padding-top: 15px;
+	font-size:18px;
+	text-align: center;
+	color: #7e7e7e;
+}
+
+#alert {
+	padding-top: 10px;
+	padding-left: 130px;
+	color: red;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+
+/************************************
+ checkout
+ ************************************/
+
+/*talbe of checkout*/
+
+#checkout_table {
+	font-family: sans-serif;
+	width: 960px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+#input_name_c {
+	width: 97%;
+}
+
+#SN {
+	width: 10%;
+}
+
+#name_c {
+	width: 45%;
+}
+
+#code_c {
+	width: 15%;
+}
+
+#price_c {
+	width: 15%;
+}
+
+#quantity_c {
+	width: 15%;
+}
+
+#checkout_c {
+	margin-right: 40px;
+}
+
+#checkout_response {
+	border-top: solid blue 1px;
+	margin: 0;
+	padding-top:15px;
+	font-size:18px;
+	color: #7e7e7e;
+}
+#checkout_response p {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+em {
+	color: black;
+}
+
+
+
+/************************************
+ order_detail.php
+ ************************************/
+
+/* table1 */
+#table1 {
+	width:100px;
+	float:left;
+	margin-left:30px;
+	height: 107px;
+
+}
+
+#p1_and_p2 {
+	padding-top:3px;
+	background: #499cf1;
+	height: 62px;
+}
+
+#p1, #p2, #p3 {
+	width: 90%;
+	margin-left: 4px;
+}
+
+.input_c {
+	border: none;
+	height:26px;  
+    padding: 0;
+    font-size:14px;
+    width:100%;
+    color: #433f3f;
+    width: 100%;
+}
+
+#p1, #p2{
+	font-family: arial;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	border: 1px solid gray;
+	margin-bottom: 0px;
+}
+
+ #p2{
+	margin-top: 3px;
+	margin-bottom: 0px;
+}
+
+#p3 {
+	margin-top: 20px;
+	margin-left: 1px;
+}
+
+#table1_button {
+	padding: 0;
+	border: 1px solid gray;
+	height: 26px;
+    width: 96px;  
+    border-radius: 13px; 
+    font-size: 16px;
+    padding-bottom: 1px;
+    letter-spacing: 1px;
+    color: #000000;
+	background: #499cf1;
+	cursor: pointer;
+	outline: none;
+}
+
+/* table2 */
+
+#table2 {
+	width:750px;
+	float:right;
+	margin-right:30px;
+}
+
+#form2 {
+	width:100%;
+}
+
+#SN_s, #code_s, #quantity_s, #price_s {
+	width: 10%;
+}
+
+#name_s {
+	width: 60%;
+}
+
+#input_name_table2 {
+	width:98%;
+}
+
+#user_id {
+	height: 22px;
+	width: 146px;
+	border: 1px solid gray;
+	padding: 0;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-top: 3px;
+	font-size: 16px;
+}
+
+#submit_bottom {
+	margin-right: 16px;
+}
+
+
+
+/************************************
+ orders.php
+ ************************************/
+
+ /* table1_d */
+
+ #table1_d {
+ 	float: left;
+ 	width: 30%;
+ 	margin-left: 30px;
+ }
+
+ .table1_d_th {
+	width: 30%;
+ }
+
+ .table1_d_td {
+ 	width: 70%;
+ }
+
+ /* table2_d */
+
+ #table2_d {
+ 	float: right;
+ 	width: 60%;
+ 	margin-right: 30px;
+ }
+
+ #table2_d_SN {
+ 	width: 10%;
+ }
+
+ #table2_d_name {
+ 	width: 50%;
+ }
+
+ #table2_d_quantity, #table2_d_price {
+ 	width: 20%;
+ }
+
+/* QR_code */
+
+#QR_code {
+	margin-left: 30px;
+	width: 200px;
+	height: 200px;
+}
+
+#qr_img {
+	float: left;
+	clear: left;
+	margin-left: 40px;
+}
