@@ -74,9 +74,16 @@ if(isset($_GET['order_ID'])) {
 	endwhile;
 
 	//insert the total price to the "orders" table 
-	//insert the user_id to the "orders" table
+	//and insert the user_id to the "orders" table
+	$paid = 0;
+	if($total == 0) {
+		$paid = 0;
+	}
+	else {
+		$paid =1;
+	}
 	try {
-		$results = $db->exec("UPDATE orders SET total_price = '$total', paid = 1, user_id = '$user_id' where id = '$order_id' ");
+		$results = $db->exec("UPDATE orders SET total_price = '$total', paid = '$paid', user_id = '$user_id' where id = '$order_id' ");
 		} catch (Exception $e) {
 			var_dump($e);
 			exit;
