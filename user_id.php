@@ -16,7 +16,7 @@ include 'db.php';
 
 try {
 	$results = $db->query("SELECT id, order_time, total_price
-		FROM orders WHERE (user_id = '$user_id') AND (paid = 1) AND (order_time BETWEEN '$dateFrom' and '$dateTo') ORDER BY id DESC");
+		FROM orders WHERE (user_id = '$user_id') AND (paid = 1) AND (order_time BETWEEN '$dateFrom 00:00:00' and '$dateTo 23:59:59') ORDER BY id DESC");
 	$results->setFetchMode(PDO::FETCH_ASSOC);
 	} catch (Exception $e) {
 		var_dump($e);
