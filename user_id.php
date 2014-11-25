@@ -9,12 +9,14 @@
  * and this part will be done on the mobile app development.  
  */
 $user_id = $_GET['user_id'];
+$dateFrom = $_GET['dateFrom'];
+$dateTo = $_GET['dateTo'];
 
 include 'db.php';
 
 try {
 	$results = $db->query("SELECT id, order_time, total_price
-		FROM orders WHERE (user_id = '$user_id') AND (paid = 1) ORDER BY id DESC");
+		FROM orders WHERE (user_id = '$user_id') AND (paid = 1) AND (order_time BETWEEN '$dateFrom' and '$dateTo') ORDER BY id DESC");
 	$results->setFetchMode(PDO::FETCH_ASSOC);
 	} catch (Exception $e) {
 		var_dump($e);
