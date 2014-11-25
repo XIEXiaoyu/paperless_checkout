@@ -24,18 +24,26 @@ try {
 	}
 
 $SN_Uid = 0;
+$total_inWhile = 0;
 while ($r_of_Uid = $results->fetch() ):
 	$Uid[$SN_Uid]['id'] = $r_of_Uid['id'];
 	$Uid[$SN_Uid]['date'] = $r_of_Uid['order_time'];
-	$Uid[$SN_Uid]['total'] = $r_of_Uid['total_price'];
+	$Uid[$SN_Uid]['total'] = $r_of_Uid['total_price'];	
+	$total_inWhile = $total_inWhile + $Uid[$SN_Uid]['total'];
 	$SN_Uid = $SN_Uid + 1;
 endwhile;
 
 $userID['id'] = $user_id; 
+$Total['total'] = $total_inWhile;
+$from['from'] = $dateFrom;
+$to['to'] = $dateTo;
 
 $json = array(
 	'Uid' => $Uid,
 	'UserID' => $userID,
+	'Total' => $Total,
+	'From' => $from,
+	'To' => $to
 );
 
 $json_str = json_encode($json);
