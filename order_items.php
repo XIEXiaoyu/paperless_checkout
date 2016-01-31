@@ -1,7 +1,7 @@
 <?php 
 
 /*
- * This is filed is directed by the orders.php file.
+ * This file is directed by the orders.php file.
  * It is expecially used to display the table on the left side, 
    which is used to select good one by one.
  * It is also used to display the selected items in another table on the right side. 

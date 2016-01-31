@@ -3,7 +3,7 @@
 /* This file is used when the "checkout tab" is clicked.
  * Then this file is redireced to order_items.php file.
  * It is expecially used to generate the order's id.
- * After the order's id is generated, is quickly redirect to the order_items.php file.
+ * After the order's id is generated, it is quickly redirect to the order_items.php file.
  */
 
 /* connect to the database */
@@ -25,8 +25,8 @@ $results = $db->exec("INSERT INTO orders (order_time) VALUES ('$date')");
 }
 
 /* We want to redirect this page to order_items.php to deal with 
-all the concrete operations, so we need to pass the id in 'orders' table 
-in database to the order_items.php page. 
+all the concrete operations, so we need to pass the id in 'orders' 
+table in database to the order_items.php page. 
 We need to get the id */
 
 try {
